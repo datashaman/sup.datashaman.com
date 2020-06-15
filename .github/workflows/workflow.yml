@@ -3,7 +3,7 @@ name: sup
 on:
   push:
     branches:
-      - site
+      - master
 
 jobs:
   jekyll:
