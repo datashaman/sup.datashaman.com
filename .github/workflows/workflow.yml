@@ -3,7 +3,7 @@ name: sup
 on:
   push:
     branches:
-      - gh-pages
+      - site
 
 jobs:
   jekyll:
