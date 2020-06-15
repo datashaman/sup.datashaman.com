@@ -1,16 +1,11 @@
 ---
 author: datashaman
-baseurl: ""
 description: "random thoughts.<br>pithy observations.<br>occasional gear-grinding."
-disqus-id: datashaman
-email: marlinf@datashaman.com
 future: false
 github: datashaman
 markdown: kramdown
 paginate: 5
-permalink: /:year/:month/:day-:title
-plugins:
-    - jekyll-paginate
+# permalink: /:year/:month/:day-:title
 sass:
     style: :compressed
 title: sup
