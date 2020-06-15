@@ -14,6 +14,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        sup=sup:cli
+        sup=sup:main
     ''',
 )

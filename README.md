@@ -2,6 +2,17 @@
 
 Nanoblog CLI interface to GitHub Pages. WIP.
 
+Setup (currently .env in the same folder, wip):
+```
+SUP_BRANCH=master
+SUP_POSTS=_posts
+SUP_REPO=myreponame
+SUP_TOKEN=5473c3c11111111bc3f1588e2eba90fb00000000
+SUP_TZ=Africa/Johannesburg
+```
+
+`SUP_REPO` and `SUP_TOKEN` are required. The rest have sensible defaults.
+
 Examples:
 ```
 sup 9pm: this thing happened @inthehood #happening
