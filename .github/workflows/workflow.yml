@@ -9,31 +9,31 @@ jobs:
   jekyll:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: install yarn deps
+      - name: Install yarn deps
         uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install
 
-      - name: build yarn deps
+      - name: Build yarn assets
         uses: borales/actions-yarn@v2.0.0
         with:
           cmd: build
 
-      - name: install ruby
+      - name: Install ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7
 
-      - name: install jekyll & build site
+      - name: Install jekyll & build site
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
           format_output: true
 
-      - name: deploy
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
