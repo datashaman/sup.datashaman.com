@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-</head>
-<body>
-    <aside class="main-header">
-        <header class="module">
-            <h1><a href="/">{{ site.title }}</a></h1>
-        </header>
-        <div class="module color2">
-            {{ site.description }}
-        </div>
-        <div class="links module color3">
-            <ul>
-                <li><a href="https://github.com/{{ site.github }}">github</a></li>
-                <li><a href="https://twitter.com/{{ site.twitter }}">twitter</a></li>
-                <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">rss</a></li>
-            </ul>
-        </div>
-    </aside>
+    <head>
+        <meta charset="utf-8" />
+        <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+        <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-  <section class="main-content">
-    {{ content }}
-  </section>
-</body>
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+    <body>
+        <aside class="main-header">
+            <header class="module">
+                <h1><a href="/">{{ site.title }}</a></h1>
+            </header>
+            <div class="description module color2">
+                {{ site.description }}
+            </div>
+            <div class="links module color3">
+                <ul>
+                    <li><a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener noreferer" title="github"><i data-feather="github" data-feather-width="48"></i></a></li>
+                    <li><a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferer" title="twitter"><i data-feather="twitter"></i></a></li>
+                    <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank" rel="noopener noreferer" title="rss"><i data-feather="rss"></i></a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="main-content">
+            {{ content }}
+        </section>
+
+        <script>
+            feather.replace({ width: 48, height: 48 })
+        </script>
+    </body>
 </html>
