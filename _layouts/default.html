@@ -14,39 +14,41 @@
     </head>
 
     <body>
-        <aside>
-            <header>
-                <h1><a href="/">{{ site.title }}</a></h1>
-            </header>
+        <div class="container">
+            <aside>
+                <header>
+                    <h1><a href="/">{{ site.title }}</a></h1>
+                </header>
 
-            <div class="description">
-                {{ site.description }}
-            </div>
+                <div class="description">
+                    {{ site.description }}
+                </div>
 
-            <div class="links">
-                <ul>
-                    <li>
-                        <a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener noreferer" title="github">
-                            <i data-feather="github" data-feather-width="48"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferer" title="twitter">
-                            <i data-feather="twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank" rel="noopener noreferer" title="rss">
-                            <i data-feather="rss"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </aside>
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener noreferer" title="github">
+                                <i data-feather="github" data-feather-width="48"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferer" title="twitter">
+                                <i data-feather="twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank" rel="noopener noreferer" title="rss">
+                                <i data-feather="rss"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
 
-        <section>
-            {{ content }}
-        </section>
+            <section>
+                {{ content }}
+            </section>
+        </div>
 
         <script>
             feather.replace({ width: 48, height: 48 })
