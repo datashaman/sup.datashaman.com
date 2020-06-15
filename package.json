@@ -14,5 +14,8 @@
     "postcss-cli": "^7.1.1",
     "postcss-scss": "^2.1.1",
     "tailwindcss": "^1.4.6"
+  },
+  "scripts": {
+    "build": "postcss src/_sass/main.scss -o src/css/main.css"
   }
 }
