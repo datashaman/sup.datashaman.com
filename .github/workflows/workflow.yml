@@ -1,4 +1,4 @@
-name: jekyll
+name: sup
 
 on:
   push:
@@ -15,7 +15,17 @@ jobs:
       - name: install ruby
         uses: ruby/setup-ruby@v1
 
-      - name: install dependencies & build site
+      - name: install yarn deps
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install
+
+      - name: build yarn deps
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: build
+
+      - name: install jekyll & build site
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
@@ -25,4 +35,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          publish_dir: ./src/_site

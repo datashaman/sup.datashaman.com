@@ -13,30 +13,30 @@
         <script src="https://unpkg.com/feather-icons"></script>
     </head>
 
-    <body>
-        <div class="container">
-            <aside>
-                <header>
+    <body class="bg-gray-200">
+        <div class="container mx-auto py-4 flex">
+            <aside class="flex-none px-4 m-2 w-64 text-center">
+                <header class="bg-blue-300 text-6xl p-2 mb-4">
                     <h1><a href="/">{{ site.title }}</a></h1>
                 </header>
 
-                <div class="description">
+                <div class="bg-yellow-300 text-xl p-2 mb-4">
                     {{ site.description }}
                 </div>
 
-                <div class="links">
-                    <ul>
-                        <li>
+                <div class="bg-green-300 p-2">
+                    <ul class="list-none">
+                        <li class="inline-block p-2">
                             <a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener noreferer" title="github">
                                 <i data-feather="github" data-feather-width="48"></i>
                             </a>
                         </li>
-                        <li>
+                        <li class="inline-block p-2">
                             <a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferer" title="twitter">
                                 <i data-feather="twitter"></i>
                             </a>
                         </li>
-                        <li>
+                        <li class="inline-block p-2">
                             <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank" rel="noopener noreferer" title="rss">
                                 <i data-feather="rss"></i>
                             </a>
@@ -45,7 +45,7 @@
                 </div>
             </aside>
 
-            <section>
+            <section class="flex-grow px-4 m-2">
                 {{ content }}
             </section>
         </div>
