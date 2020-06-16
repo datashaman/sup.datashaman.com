@@ -4,7 +4,7 @@ layout: default
 
 {% for post in paginator.posts %}
   <article class="bg-white p-4 mb-4">
-    <a class="float-right text-gray-600" href="{{ post.url | prepend: site.baseurl }}">
+    <a class="md:float-right text-gray-600 text-sm md:text-base" href="{{ post.url | prepend: site.baseurl }}">
         <time>{{ post.date| date: "%Y-%m-%d %H:%M" }}</time>
     </a>
     <p>
