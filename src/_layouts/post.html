@@ -1,10 +1,4 @@
 ---
 layout: default
 ---
-
-<article class="color3 module">
-  <a href="{{ page.url }}">
-    <time>{{ page.date | date: "%Y-%m-%d %H:%M" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
-  </a>
-  {{ content }}
-</article>
+{% include post.html post=page %}
