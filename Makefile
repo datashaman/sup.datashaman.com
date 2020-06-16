@@ -1,13 +1,13 @@
-css = src/css/main.css
-css_source = src/_sass/main.scss
+style = src/styles/main.css
+style_source = src/_styles/main.scss
 
-serve: $(css)
+serve: $(style)
 	cd src && bundle exec jekyll serve --livereload --drafts --future --port 5000 --livereload_port 35729 "$@"
 
-build: $(css)
+build: $(style)
 	cd src && bundle exec jekyll build
 
-css: $(css)
+css: $(style)
 
-$(css): $(css_source)
+$(style): $(style_source)
 	postcss "$<" -o "$@"
