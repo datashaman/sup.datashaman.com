@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <meta content='text/html; charset=utf-8' http-equiv='Content-Type'/>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
         <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
         <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
         <link rel="preload" href="{% link /styles/main.css %}" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
@@ -30,6 +30,7 @@
                         <li class="inline-block p-2">
                             <a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener noreferer" title="github">
                                 <i data-feather="github"></i>
+                                github
                             </a>
                         </li>
                         <li class="inline-block p-2">
