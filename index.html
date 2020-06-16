@@ -13,7 +13,13 @@
       name="description"
       content="random thoughts.<br>pithy observations.<br>some gear-grinding."
     />
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      rel="preload"
+      href="/styles/main.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="/styles/main.css" /></noscript>
     <link rel="canonical" href="https://sup.datashaman.com/" />
     <link
       rel="alternate"
@@ -21,7 +27,7 @@
       title="sup"
       href="https://sup.datashaman.com/feed.xml"
     />
-    <script src="/scripts/feather.min.js"></script>
+    <script src="/scripts/feather.min.js" defer></script>
   </head>
 
   <body class="bg-gray-300">
@@ -111,7 +117,9 @@
     </div>
 
     <script>
-      feather.replace();
+      document.addEventListener("DOMContentLoaded", function () {
+        feather.replace();
+      });
     </script>
   </body>
 </html>
