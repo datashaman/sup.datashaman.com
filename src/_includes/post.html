@@ -1,8 +1,8 @@
-<article class="bg-white p-4 mb-4 rounded shadow">
-    <a class="md:float-right text-gray-700 text-sm" href="{{ include.post.url | prepend: site.baseurl }}">
-        <time>{{ include.post.date | date: "%Y-%m-%d %H:%M" }}{% if include.post.author %} • {{ include.post.author }}{% endif %}{% if include.post.meta %} • {{ include.post.meta }}{% endif %}</time>
+<article class="h-entry bg-white p-4 mb-4 rounded shadow">
+    <a class="u-url md:float-right text-gray-700 text-sm" href="{{ include.post.url | prepend: site.baseurl }}">
+        <time class="dt-published" datetime="{{ include.post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ include.post.date }}</time>
     </a>
-    <p>
-        {{ include.post.content | strip_html }}
-    </p>
+    <div class="e-content">
+        {{ include.post.content }}
+    </div>
 </article>
