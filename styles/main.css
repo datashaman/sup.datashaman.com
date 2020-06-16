@@ -17879,13 +17879,8 @@ video {
 }
 
 .feather {
-  width: 48px;
-  height: 48px;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  fill: none;
+  width: 32px;
+  height: 32px;
 }
 
 @media (min-width: 640px) {
