@@ -16,6 +16,6 @@
     "tailwindcss": "^1.4.6"
   },
   "scripts": {
-    "build": "postcss src/_sass/main.scss -o src/css/main.css"
+    "build": "postcss src/_styles/main.scss -o src/styles/main.css"
   }
 }
