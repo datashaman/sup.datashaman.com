@@ -1,12 +1,24 @@
 ---
 author: datashaman
 description: "random thoughts.<br>pithy observations.<br>some gear-grinding."
+emoji_dir: images
 future: false
 github: datashaman
+liquid:
+    error_mode: strict
+    strict_filters: true
+    strict_variables: true
 markdown: kramdown
 paginate: 10
 plugins:
+    - jekyll-default-layout
+    - jekyll-gist
+    - jekyll-github-metadata
+    - jekyll-optional-front-matter
     - jekyll-paginate
+    - jekyll-relative-links
+    - jekyll-titles-from-headings
+    - jemoji
 title: sup
 twitter: data_shaman
 url: https://sup.datashaman.com

@@ -1,5 +1,6 @@
 <article class="h-entry bg-white p-4 mb-4 rounded shadow">
     <a class="u-url md:float-right text-gray-700 text-sm" href="{{ include.post.url | prepend: site.baseurl }}">
+        {{ include.post.date }}
         <time class="dt-published" datetime="{{ include.post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ include.post.date }}</time>
     </a>
     <div class="e-content">
