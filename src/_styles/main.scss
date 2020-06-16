@@ -1,4 +1,9 @@
 @tailwind base;
+
+article a {
+  color: blue;
+}
+
 @tailwind components;
 @tailwind utilities;
 

@@ -591,6 +591,10 @@ video {
   height: auto;
 }
 
+article a {
+  color: blue;
+}
+
 .container {
   width: 100%;
 }
