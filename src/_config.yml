@@ -4,7 +4,7 @@ description: "random thoughts.<br>pithy observations.<br>some gear-grinding."
 future: false
 github: datashaman
 markdown: kramdown
-paginate: 5
+paginate: 10
 plugins:
     - jekyll-paginate
 title: sup
