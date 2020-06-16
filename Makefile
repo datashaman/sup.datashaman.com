@@ -1,4 +1,4 @@
-style = src/styles/main.css
+style = src/_includes/styles/main.css
 style_source = src/_styles/main.scss
 
 serve: $(style)
