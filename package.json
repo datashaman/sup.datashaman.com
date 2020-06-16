@@ -16,6 +16,6 @@
     "tailwindcss": "^1.4.6"
   },
   "scripts": {
-    "build": "postcss src/_styles/main.scss -o src/styles/main.css"
+    "build": "NODE_ENV=production postcss src/_styles/main.scss -o src/styles/main.css"
   }
 }
