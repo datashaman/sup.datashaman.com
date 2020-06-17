@@ -14,7 +14,6 @@ github: datashaman
 liquid:
     error_mode: strict
     strict_filters: true
-    strict_variables: true
 markdown: kramdown
 paginate: 10
 plugins:

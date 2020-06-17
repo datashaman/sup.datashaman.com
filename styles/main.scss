@@ -7,6 +7,61 @@ article a {
   font-weight: bold;
 }
 
+div.unfurl {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 15px;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    max-width: 550px;
+    margin: 1em 0;
+}
+
+div.unfurl img {
+    width: 120px;
+    background-color: #ebebeb;
+}
+
+div.unfurl-favicon img {
+    width: 80px;
+    padding: 0px;
+    background-color: #ebebeb;
+}
+
+div.unfurl-content a {
+    color: black;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    min-width: 10px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+div.unfurl-content a.unfurl-domain {
+    color: gray;
+    font-weight: normal;
+}
+
+div.unfurl-content {
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 10px;
+    width: 100%;
+}
+
+div.unfurl-content div {
+    line-height: 18px;
+    max-height: 54px;
+    overflow: hidden;
+}
+
 @tailwind components;
 @tailwind utilities;
 
