@@ -2,6 +2,10 @@
 author: datashaman
 description: "random thoughts.<br>pithy observations.<br>some gear-grinding."
 emoji_dir: images
+exclude:
+    - package.json
+    - postcss.config.js
+    - vendor
 future: false
 github: datashaman
 liquid:
