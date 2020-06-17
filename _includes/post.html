@@ -5,4 +5,13 @@
     <div class="e-content">
         {{ include.post.content }}
     </div>
+    {% if include.post.references %}
+    <ul class="list-none">
+        {% for reference in include.post.references %}
+        <li>
+            {{ reference.html }}
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
 </article>
