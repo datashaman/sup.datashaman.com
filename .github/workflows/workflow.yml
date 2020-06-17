@@ -30,6 +30,7 @@ jobs:
       - name: Install jekyll & build site
         uses: limjh16/jekyll-action-ts@v2
         env:
+          JEKYLL_ENV: production
           PAGES_REPO_NWO: datashaman/sup.datashaman.com
         with:
           enable_cache: true

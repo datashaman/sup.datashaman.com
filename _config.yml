@@ -16,6 +16,7 @@ plugins:
     - jekyll-github-metadata
     - jekyll-optional-front-matter
     - jekyll-paginate
+    - jekyll-postcss
     - jekyll-relative-links
     - jekyll-titles-from-headings
     - jemoji
