@@ -569,9 +569,6 @@ article a {
 .block {
   display: block; }
 
-.inline-block {
-  display: inline-block; }
-
 .inline {
   display: inline; }
 
@@ -583,6 +580,9 @@ article a {
 
 .hidden {
   display: none; }
+
+.justify-center {
+  justify-content: center; }
 
 .flex-auto {
   flex: 1 1 auto; }
