@@ -1,5 +1,6 @@
 ---
 author: datashaman
+baseurl: ""
 description: "random thoughts.<br>pithy observations.<br>some gear-grinding."
 emoji_dir: images
 exclude:
