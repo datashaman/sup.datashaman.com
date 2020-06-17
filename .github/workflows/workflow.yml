@@ -26,10 +26,10 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
         env:
           JEKYLL_ENV: production
+          NODE_ENV: production
           PAGES_REPO_NWO: datashaman/sup.datashaman.com
         with:
           enable_cache: true
-          format_output: true
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
