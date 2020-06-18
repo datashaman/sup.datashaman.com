@@ -5,9 +5,20 @@
     <description>random thoughts.&lt;br&gt;pithy observations.&lt;br&gt;some gear-grinding.</description>
     <link>https://sup.datashaman.com/</link>
     <atom:link href="https://sup.datashaman.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 18 Jun 2020 08:55:13 +0000</pubDate>
-    <lastBuildDate>Thu, 18 Jun 2020 08:55:13 +0000</lastBuildDate>
+    <pubDate>Thu, 18 Jun 2020 09:45:34 +0000</pubDate>
+    <lastBuildDate>Thu, 18 Jun 2020 09:45:34 +0000</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>094446</title>
+        <description>&lt;p&gt;this keeps coming up in my feeds… https://svelte.dev/&lt;/p&gt;
+</description>
+        <pubDate>Thu, 18 Jun 2020 09:44:46 +0000</pubDate>
+        <link>https://sup.datashaman.com/2020/06/18/094446.html</link>
+        <guid isPermaLink="true">https://sup.datashaman.com/2020/06/18/094446.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>085403</title>
@@ -111,17 +122,6 @@ https://twitter.com/DBGerrard/status/1270134800519700481?s=09&lt;/p&gt;
         <pubDate>Tue, 16 Jun 2020 09:55:29 +0000</pubDate>
         <link>https://sup.datashaman.com/2020/06/16/095529.html</link>
         <guid isPermaLink="true">https://sup.datashaman.com/2020/06/16/095529.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>094421</title>
-        <description>&lt;p&gt;testing if timezone works&lt;/p&gt;
-</description>
-        <pubDate>Tue, 16 Jun 2020 09:44:21 +0000</pubDate>
-        <link>https://sup.datashaman.com/2020/06/16/094421.html</link>
-        <guid isPermaLink="true">https://sup.datashaman.com/2020/06/16/094421.html</guid>
         
         
       </item>
